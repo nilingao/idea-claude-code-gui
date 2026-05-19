@@ -36,7 +36,7 @@ import {
 
 const COMMAND_DENIED_ABORT_ERROR = '__CODEX_COMMAND_DENIED_ABORT__';
 
-function isWindowsTaskkillParseNoise(message) {
+export function isWindowsTaskkillParseNoise(message) {
   if (typeof message !== 'string') return false;
   if (!message.startsWith('Failed to parse item:')) return false;
 
